@@ -16,3 +16,13 @@ header p{
     color: white;
 }
 
+.login-form {
+    border: 1px solid black;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+}
