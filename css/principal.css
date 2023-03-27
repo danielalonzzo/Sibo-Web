@@ -1,0 +1,112 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+
+body{
+    background-color: rgb(37, 36, 36);
+}
+
+header{
+    background-color: #422C0B;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 18pt;
+}
+
+header p{
+    margin-left: 25px;
+    color: white;
+}
+
+header img {
+    width: 120px;
+    position: absolute;
+    left: 1150px;
+}
+
+.vertical-line {
+    border: none;
+    border-left: 1px solid white;
+    height: 200px;
+  }
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 85px;
+    background-color: transparent;
+    width: 190px;
+    z-index: 200;
+    padding-top: 5px;
+    border-right-style: groove;
+}
+  
+.sidebar-link {
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+  
+.sidebar-link:hover {
+    background-color: rgb(49, 48, 48);
+}
+  
+.sidebar-link img {
+    height: 25px;
+    margin-bottom: 4px;
+}
+  
+.sidebar-link div {
+    font-size: 15px;
+    color: white;
+}
+  
+.assistance-button {
+    height: 50px;
+    width: 150px;
+    background-color: #422C0B;
+    color: white;
+    border-width: 1px;
+    border-style: solid;
+    border: none;
+    margin-left: 20px;
+    margin-top: 400px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.content {
+    width: calc(100vw - 240px);
+}
+
+.chips-wrapper {
+    background-color: transparent;
+    display: flex;
+    margin-left: 230px;
+    margin-top: 37px;
+}
+
+.chip {
+    color: white;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.txt {
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 140px;
+}
+
+.txt h1 {
+    font-weight: bold;
+    font-size: 50pt;
+}

@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body {
+    background-color: rgb(37, 36, 36);
+    padding-top: 100px;
+}
+h1 {
+
+}
+img{
+    width: 320px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+header{
+    background-color: #422C0B;
+    display: flex;
+    align-items: center;
+    gap: 31%;
+    height: 70px;
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+header p {
+    margin-left: 25px;
+    color: white;
+    font-size: 18pt;
+}
+.logo {
+    height: 90px;
+    width: 150px;
+    position: absolute;
+    left: 1150px;
+}
+.scroll{
+    background-color: #3c2b15;
+}          
+.carrito{
+    filter: invert(100%);
+    width: 45px;
+    height: auto;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+.contenedor>div{
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    background-color: #422C0B;
+    border-radius: 20px;
+}
+.contenedor>div:hover{
+    background-color: #3c2b15;
+}
+
+.informacion{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:15px;
+}
+.informacion>p:first-child{
+    font-size: 25px;
+    font-weight: 300;
+}
+.informacion .precio {
+    font-size: 20px;
+    font-weight: 500;
+}
+.informacion .precio span{
+    font-size: 17px;
+    font-weight: 300;
+}
+.informacion button{
+    background-color: rgb(37, 36, 36);
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.informacion button:hover{
+    background-color: rgb(57, 56, 56);
+}
