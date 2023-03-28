@@ -22,9 +22,9 @@ header p{
 }
 
 header img {
-    width: 120px;
+    width: 50px;
     position: absolute;
-    left: 1150px;
+    left: 1200px;
 }
 
 .vertical-line {

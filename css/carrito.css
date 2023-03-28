@@ -8,9 +8,6 @@ body {
     background-color: rgb(37, 36, 36);
     padding-top: 100px;
 }
-h1 {
-
-}
 img{
     width: 320px;
     height: 340px;
@@ -26,6 +23,7 @@ header{
     top: 0;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 header p {
     margin-left: 25px;
@@ -33,16 +31,141 @@ header p {
     font-size: 18pt;
 }
 .logo {
-    height: 90px;
-    width: 150px;
+    height: 40px;
+    width: 50px;
     position: absolute;
-    left: 1150px;
+    left: 1200px;
+}
+.close-button {
+    display: flex;
+    z-index: 0;
+    position: absolute;
+    background-color: transparent;
+    border-style: none;
+    left: 123px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+.close-button img{
+    width: 20px;
+    height: 20px;
+}
+.cancelar-button {
+    display: flex;
+    z-index: 0;
+    position: absolute;
+    background-color: transparent;
+    border-style: none;
+    left: 494px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+.cancelar-button img{
+    width: 20px;
+    height: 20px;
+}
+.cancelar-boton {
+    display: flex;
+    z-index: 0;
+    position: absolute;
+    background-color: transparent;
+    border-style: none;
+    left: 865px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+.cancelar-boton img{
+    width: 20px;
+    height: 20px;
+}
+.close-boton {
+    display: flex;
+    z-index: 0;
+    position: absolute;
+    background-color: transparent;
+    border-style: none;
+    left: 123px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+.close-boton img{
+    width: 20px;
+    height: 20px;
+}
+.cerrar-boton {
+    display: flex;
+    z-index: 0;
+    position: absolute;
+    background-color: transparent;
+    border-style: none;
+    left: 494px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+.cerrar-boton img{
+    width: 20px;
+    height: 20px;
+}
+.cerrar-button {
+    display: flex;
+    z-index: 0;
+    position: absolute;
+    background-color: transparent;
+    border-style: none;
+    left: 865px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+.cerrar-button img{
+    width: 20px;
+    height: 20px;
+}
+.cancel-boton {
+    display: flex;
+    z-index: 0;
+    position: absolute;
+    background-color: transparent;
+    border-style: none;
+    left: 123px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+.cancel-boton img{
+    width: 20px;
+    height: 20px;
+}
+.cancel-button {
+    display: flex;
+    z-index: 0;
+    position: absolute;
+    background-color: transparent;
+    border-style: none;
+    left: 494px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+.cancel-button img{
+    width: 20px;
+    height: 20px;
+}
+.cancelar-boton {
+    display: flex;
+    z-index: 0;
+    position: absolute;
+    background-color: transparent;
+    border-style: none;
+    left: 865px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+.cancelar-boton img{
+    width: 20px;
+    height: 20px;
 }
 .scroll{
     background-color: #3c2b15;
 }          
 .carrito{
-    filter: invert(100%);
     width: 45px;
     height: auto;
 }
@@ -61,7 +184,6 @@ header p {
 .contenedor>div:hover{
     background-color: #3c2b15;
 }
-
 .informacion{
     height: 150px;
     display: flex;
@@ -73,6 +195,9 @@ header p {
 .informacion>p:first-child{
     font-size: 25px;
     font-weight: 300;
+}
+.informacion p {
+    font-size: 25px;
 }
 .informacion .precio {
     font-size: 20px;
@@ -88,7 +213,6 @@ header p {
     height: 35px;
     border-radius: 10px;
     border: none;
-
     font-size: 17px;
     font-weight: 300;
     cursor: pointer;
