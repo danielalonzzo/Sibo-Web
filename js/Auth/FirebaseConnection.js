@@ -27,7 +27,7 @@ document.getElementById("ingresar").addEventListener("click", function () {
       // Signed in
       const user = userCredential.user;
       // ...
-      window.location.href = "../html/principal.html";
+      window.location.href = "/html/Principal/principal.html";
     })
     .catch((error) => {
       const errorCode = error.code;
