@@ -8,12 +8,6 @@ body {
     background-color: rgb(37, 36, 36);
     padding-top: 100px;
 }
-img{
-    width: 320px;
-    height: 340px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-}
 header{
     background-color: #422C0B;
     display: flex;
@@ -26,15 +20,24 @@ header{
     z-index: 1;
 }
 header p {
-    margin-left: 25px;
+    margin-left: 65px;
     color: white;
     font-size: 18pt;
 }
 .logo {
-    height: 40px;
+    height: 50px;
     width: 50px;
+    display: flex;
     position: absolute;
     left: 1200px;
+    cursor: pointer;
+}
+/* ** estilo de cada producto **
+img{
+    width: 320px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
 }
 .close-button {
     display: flex;
@@ -165,10 +168,6 @@ header p {
 .scroll{
     background-color: #3c2b15;
 }          
-.carrito{
-    width: 45px;
-    height: auto;
-}
 .contenedor{
     display: flex;
     justify-content: center;
@@ -178,11 +177,11 @@ header p {
 }
 .contenedor>div{
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    background-color: #422C0B;
+    background-color: white;
     border-radius: 20px;
 }
 .contenedor>div:hover{
-    background-color: #3c2b15;
+    background-color: rgb(229, 229, 229);
 }
 .informacion{
     height: 150px;
@@ -198,14 +197,11 @@ header p {
 }
 .informacion p {
     font-size: 25px;
+    color: black;
 }
 .informacion .precio {
     font-size: 20px;
     font-weight: 500;
-}
-.informacion .precio span{
-    font-size: 17px;
-    font-weight: 300;
 }
 .informacion button{
     background-color: rgb(37, 36, 36);
@@ -220,3 +216,4 @@ header p {
 .informacion button:hover{
     background-color: rgb(57, 56, 56);
 }
+*/

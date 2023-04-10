@@ -1,13 +1,10 @@
 *{
     padding: 0px;
     margin: 0px;
-
 }
-
 body{
-    background-color: rgb(37, 36, 36);
+    background-color: white;
 }
-
 header{
     background-color: #422C0B;
     height: 80px;
@@ -15,36 +12,27 @@ header{
     align-items: center;
     font-size: 18pt;
 }
-
 header p{
     margin-left: 25px;
     color: white;
 }
-
 header img {
     width: 50px;
+    display: flex;
     position: absolute;
     left: 1200px;
 }
-
-.vertical-line {
-    border: none;
-    border-left: 1px solid white;
-    height: 200px;
-  }
-
 .sidebar {
     position: fixed;
-    left: 0;
-    bottom: 0;
+    left: 5px;
+    bottom: 5px;
     top: 85px;
-    background-color: transparent;
+    background-color: #6d4a15;
     width: 190px;
     z-index: 200;
     padding-top: 5px;
-    border-right-style: groove;
+    border-radius: 40px;
 }
-  
 .sidebar-link {
     height: 74px;
     display: flex;
@@ -53,24 +41,24 @@ header img {
     flex-direction: column;
     cursor: pointer;
 }
-  
 .sidebar-link:hover {
-    background-color: rgb(49, 48, 48);
+    background-color: #422C0B;
+    border-radius: 40px;
 }
-  
 .sidebar-link img {
     height: 25px;
     margin-bottom: 4px;
 }
-  
 .sidebar-link div {
     font-size: 15px;
     color: white;
 }
-  
 .assistance-button {
     height: 50px;
     width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #422C0B;
     color: white;
     border-width: 1px;
@@ -81,32 +69,27 @@ header img {
     border-radius: 30px;
     cursor: pointer;
 }
-
 .content {
     width: calc(100vw - 240px);
 }
-
 .chips-wrapper {
     background-color: transparent;
     display: flex;
     margin-left: 230px;
     margin-top: 37px;
 }
-
 .chip a {
-    color: white;
+    color: #422C0B;
     margin: 15px;
     cursor: pointer;
     text-decoration: none; 
 }
-
 .txt {
-    color: white;
+    color: #422C0B;
     text-align: center;
     margin-top: 200px;
     margin-left: 140px;
 }
-
 .txt h1 {
     font-weight: bold;
     font-size: 50pt;
