@@ -93,10 +93,11 @@ header img {
     margin-top: 37px;
 }
 
-.chip {
+.chip a {
     color: white;
     margin: 15px;
     cursor: pointer;
+    text-decoration: none; 
 }
 
 .txt {
