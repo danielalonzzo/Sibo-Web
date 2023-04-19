@@ -33,7 +33,7 @@
             </div>
             <div class="form-group m-4">
               <label for="año">Año:</label>
-              <input type="number" class="form-control" id="año" name="anno">
+              <input type="number" class="form-control" id="anno" name="anno">
             </div>
             <div class="form-group m-4">
               <label for="tipo">Tipo:</label>
@@ -60,15 +60,15 @@
                 <th>Acciones</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody class="product-list">
               <tr>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td>
-                  <button class="btn btn-sm btn-warning">Editar</button>
-                  <button class="btn btn-sm btn-danger">Eliminar</button>
+                  <button class="btn btn-sm btn-warning" id="editar" data-id="${producto.id}">Editar</button>
+                  <button class="btn btn-sm btn-danger" id="eliminar" data-id="${producto.id}">Eliminar</button>
                 </td>
               </tr>
             </tbody>
