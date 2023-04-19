@@ -37,6 +37,7 @@ btnGuardar.addEventListener("click", async (e) => {
   const precio = document.getElementById("precio").value;
   const anno = document.getElementById("anno").value;
   const tipo = document.getElementById("tipo").value;
+  const marca = document.getElementById("marca").value;
   const imagen = document.getElementById("imagen").files[0];
   const form = document.querySelector("form");
   
@@ -55,6 +56,7 @@ btnGuardar.addEventListener("click", async (e) => {
       nombre: nombre,
       precio: precio,
       anno: anno,
+      marca: marca,
       tipo: tipo,
       imagenURL: downloadURL
     });
@@ -69,14 +71,15 @@ btnGuardar.addEventListener("click", async (e) => {
   }
 });
 
-function renderProductos(productos) {
+function renderProductos(listaProductos) {
   productosTabla.innerHTML = "";
-  productos.forEach((productos) => {
+  listaProductos.forEach((productos) => {
     const tr = document.createElement("tr");
     tr.innerHTML = `
       <td>${productos.nombre}</td>
       <td>${productos.precio}</td>
       <td>${productos.anno}</td>
+      <td>${productos.marca}</td>
       <td>${productos.tipo}</td>
       <td>
         <button class="btn btn-warning btn-sm edit" data-id="${productos.id}">Editar</button>
@@ -130,6 +133,7 @@ productosTabla.addEventListener('click', async (e) => {
     nombre.value = producto.nombre;
     precio.value = producto.precio;
     anno.value = producto.anno;
+    marca.value = producto.marca;
     tipo.value = producto.tipo;
     
      // Agregar botón "Guardar"
@@ -142,11 +146,11 @@ productosTabla.addEventListener('click', async (e) => {
            nombre: nombre.value,
            precio: precio.value,
            anno: anno.value,
+           marca: marca.value,
            tipo: tipo.value,
          });
          console.log('Producto actualizado con éxito');
          alert('¡Producto actualizado correctamente!');
-         renderProductos()
          mostrarProductos();
  
          // Remover botón "Guardar" y limpiar campos de entrada
@@ -154,6 +158,7 @@ productosTabla.addEventListener('click', async (e) => {
          nombre.value = '';
          precio.value = '';
          anno.value = '';
+         marca.value = '';
          tipo.value = '';
        } catch (error) {
          console.error('Error al actualizar el producto', error);
@@ -164,6 +169,5 @@ productosTabla.addEventListener('click', async (e) => {
      // Reemplazar botón "Editar" con botón "Guardar"
      e.target.parentNode.replaceChild(guardarBtn, e.target);
    }
- });
-
+  });
 

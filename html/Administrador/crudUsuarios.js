@@ -9,6 +9,7 @@ import {
     deleteDoc,
     getDoc,
   } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore.js";
+  import { getAuth, createUserWithEmailAndPassword, deleteUser } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js";
 
 const firebaseConfig = {
     apiKey: "AIzaSyBV__UglW83VhQT8Af36IoU_DDUpvmj_tM",
@@ -24,7 +25,9 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const Usuarios = collection(db, "Usuarios");
+const auth = getAuth(app);
 
+let password = '123456789';
 let nombre = document.querySelector("#firstName");
 let apellidos = document.querySelector("#lastName");
 let edad = document.querySelector("#age");
@@ -35,7 +38,21 @@ const usuariosTabla = document.querySelector(".user-list");
 
 submit.addEventListener('click',  async (e) => {
     e.preventDefault();
-  
+
+    createUserWithEmailAndPassword(auth, email.value, password)
+    .then((userCredential) => {
+      // El usuario se registró exitosamente
+      const user = userCredential.user;
+      console.log("Usuario registrado:", user);
+      
+    })
+    .catch((error) => {
+      // Hubo un error al registrar al usuario
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.log(errorCode, errorMessage);
+    });
+    
     try {
       const docRef = await addDoc(Usuarios, {
         firstName: nombre.value,
@@ -96,20 +113,27 @@ async function mostrarUsuarios() {
   
   async function eliminarUsuarios(id) {
     try {
+      // Eliminar usuario de Firestore
       await deleteDoc(doc(db, "Usuarios", id));
-      console.log("Usuario eliminado con éxito");
+      console.log("Usuario eliminado de Firestore con éxito");
+  
+      // Eliminar usuario de Firebase Authentication
+      const user = auth.currentUser;
+      await deleteUser(user);
+  
+      console.log("Usuario eliminado de Firebase Authentication con éxito");
       alert('¡Usuario eliminado correctamente!');
       mostrarUsuarios();
     } catch (error) {
-      console.error("Error al eliminar el estudiante", error);
-      alert('Ocurrió un error al eliminar el estudiante. Por favor intenta nuevamente más tarde.');
+      console.error("Error al eliminar el usuario", error);
+      alert('Ocurrió un error al eliminar el usuario. Por favor intenta nuevamente más tarde.');
     }
   }
-  
   usuariosTabla.addEventListener('click', async (e) => {
     if (e.target.classList.contains('delete')) {
       const usuarioId = e.target.dataset.id;
-      if (confirm("¿Estás seguro de que deseas eliminar este usuario?")) {
+  
+      if (confirm("¿Estás seguro de que deseas eliminar este usuario? Esta acción es irreversible.")) {
         eliminarUsuarios(usuarioId);
       }
     }
@@ -164,3 +188,8 @@ usuariosTabla.addEventListener('click', async (e) => {
        e.target.parentNode.replaceChild(guardarBtn, e.target);
      }
    });
+
+
+
+
+   
