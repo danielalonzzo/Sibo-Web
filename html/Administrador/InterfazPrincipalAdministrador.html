@@ -1,90 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <link rel="stylesheet" href="../Administrador/admin.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Administrador</title>
-    <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #121212;
-      }
-
-      header {
-        background-color: #422C0B;
-        color: #fff;
-        padding: 10px;
-        text-align: center;
-      }
-
-      nav {
-        background-color: #6d4a15;
-        border: 1px solid #000000;
-        display: flex;
-        justify-content: space-between;
-        padding: 10px;
-      }
-
-      nav a {
-        color: #ffffff;
-        text-decoration: none;
-      }
-
-      main {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 20px;
-      }
-
-      article {
-        background-color: #f2f2f2;
-        border: 1px solid #000000;
-        margin: 10px;
-        padding: 10px;
-        width: 300px;
-      }
-
-      article img {
-        width: 100%;
-      }
-
-      article h2 {
-        margin-top: 0;
-      }
-
-      article p {
-        font-size: 14px;
-        line-height: 1.5;
-        margin-bottom: 0;
-      }
-
-      article button {
-        background-color: #333;
-        border: none;
-        color: #fff;
-        cursor: pointer;
-        display: block;
-        font-size: 16px;
-        margin-top: 10px;
-        padding: 10px;
-        width: 100%;
-      }
-
-      article button:hover {
-        background-color: #3b3b3b31;
-        color: #000000;
-      }
-
-      footer {
-        background-color: #ffffff;
-        color: #fff;
-        padding: 10px;
-        text-align: center;
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -94,4 +14,19 @@
       <a href="#">Inicio</a>
       <a href="../Principal/carrito.html">Carrito</a>
     </nav>
-    <main>
+
+    <div class="cruds">
+
+      <a class="usuarios-admin" href="../Administrador/crudUsuarios.html">
+        Editar Usuarios
+        <img src="/images/users-group-svgrepo-com(1).svg" alt="lol  " />
+      </a>
+
+      <a class="productos-admin" href="../Administrador/crudProductos.html"
+        >Editar Productos
+        <img src="/images/prodcuts.svg" alt="lol" />
+      </a>
+
+    </div>
+  </body>
+</html>
