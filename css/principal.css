@@ -1,0 +1,83 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: white;
+}
+header{
+    background-color: #422C0B;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 18pt;
+}
+header p{
+    margin-left: 25px;
+    color: white;
+}
+header img {
+    width: 50px;
+    display: flex;
+    position: absolute;
+    left: 1200px;
+}
+.sidebar {
+    position: fixed;
+    left: 5px;
+    bottom: 5px;
+    top: 85px;
+    background-color: #6d4a15;
+    width: 190px;
+    z-index: 200;
+    padding-top: 5px;
+    border-radius: 40px;
+}
+.sidebar-link {
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.sidebar-link:hover {
+    background-color: #422C0B;
+    border-radius: 40px;
+}
+.sidebar-link img {
+    height: 25px;
+    margin-bottom: 4px;
+}
+.sidebar-link div {
+    font-size: 15px;
+    color: white;
+}
+.carrito {
+    text-decoration: none;
+}
+.content {
+    width: calc(100vw - 240px);
+}
+.chips-wrapper {
+    background-color: transparent;
+    display: flex;
+    margin-left: 230px;
+    margin-top: 37px;
+}
+.chip a {
+    color: #422C0B;
+    margin: 15px;
+    cursor: pointer;
+    text-decoration: none; 
+}
+.txt {
+    color: #422C0B;
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 140px;
+}
+.txt h1 {
+    font-weight: bold;
+    font-size: 50pt;
+}
