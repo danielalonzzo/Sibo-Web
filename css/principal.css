@@ -11,6 +11,7 @@ header{
     display: flex;
     align-items: center;
     font-size: 18pt;
+    justify-content: space-between;
 }
 header p{
     margin-left: 25px;
@@ -19,8 +20,9 @@ header p{
 header img {
     width: 50px;
     display: flex;
-    position: absolute;
-    left: 1200px;
+    margin-right: 10px;
+    
+    
 }
 .sidebar {
     position: fixed;
@@ -76,8 +78,36 @@ header img {
     text-align: center;
     margin-top: 200px;
     margin-left: 140px;
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 .txt h1 {
     font-weight: bold;
     font-size: 50pt;
 }
+
+ @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
