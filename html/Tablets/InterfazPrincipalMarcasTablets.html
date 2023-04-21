@@ -1,128 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/InterfazVentaDispositivos.css">
+    <script src="/js/carrito.js" async></script>
     <title>Tablets</title>
-    <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #121212;
-      }
-
-      header {
-        background-color: #422C0B;
-        color: #fff;
-        padding: 10px;
-        text-align: center;
-      }
-
-      nav {
-        background-color: #6d4a15;
-        border: 1px solid #000000;
-        display: flex;
-        justify-content: space-between;
-        padding: 10px;
-      }
-
-      nav a {
-        color: #ffffff;
-        text-decoration: none;
-      }
-
-      main {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 20px;
-      }
-
-      article {
-        background-color: #f2f2f2;
-        border: 1px solid #000000;
-        margin: 10px;
-        padding: 10px;
-        width: 300px;
-      }
-
-      article img {
-        width: 100%;
-      }
-
-      article h2 {
-        margin-top: 0;
-      }
-
-      article p {
-        font-size: 14px;
-        line-height: 1.5;
-        margin-bottom: 0;
-      }
-
-      article button {
-        background-color: #333;
-        border: none;
-        color: #fff;
-        cursor: pointer;
-        display: block;
-        font-size: 16px;
-        margin-top: 10px;
-        padding: 10px;
-        width: 100%;
-      }
-
-      article button:hover {
-        background-color: #3b3b3b31;
-        color: #000000;
-      }
-
-      footer {
-        background-color: #ffffff;
-        color: #fff;
-        padding: 10px;
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Tablets</h1>
-    </header>
-    <nav>
-      <a href="#">Inicio</a>
-      <a href="#">Carrito</a>
-    </nav>
-    <main>
-      <article>
-        <img src="../Imagenes/LogoApple.png" width="150" height="350" alt="Producto 1"/>
-        <p><a href="InterfazVentaiPad.html"><button>Apple</button></a></p>
-      </article>
-      <article>
-        <img src="../Imagenes/LogoMicrosoft.png" width="350" height="300" alt="Producto 1" />
-        <br>
-        <br>
-        <br>
-        <p><a href="InterfazVentaSurfaceTab.html"><button>Microsoft</button></a></p>
-      </article>
-    <article>
-        <img src="../Imagenes/LogoSamsung.png" width="150" height="250" alt="Producto 1" />
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <p><a href="InterfazVentaGalaxyTab.html"><button>Samsung</button></a></p>
-    </article>
-    <article>
-        <img src="../Imagenes/LogoHuawei.png" width="350" height="250" alt="Producto 1" />
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <p><a href="InterfazVentaMatePad.html"><button>Huawei</button></a></p>
-    </article>
+</head>
+<body>
+  <header id="header">
+    <p><span style="font-weight: bold;">Si</span>bö</p>
+    <h1>Tablets</h1> 
+    <a href="/html/Principal/principal.html">
+        <button class="logo">
+            <img class="logo" src="/images/logo.png" alt="">
+        </button>
+    </a>
+</header>
+    <section class="contenedor">
+        <!-- Contenedor de elementos -->
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">Apple</span>
+                <img src="/images/Imagenes/LogoApple.png" alt="" class="img-item" width="auto" height="150">
+                <p><a href="InterfazVentaiPad.html"><button class="marca-item">iPad</button></a></p>
+            </div>
+            <div class="item">
+              <span class="titulo-item">Samsung</span>
+              <img src="/images/Imagenes/LogoSamsung.png" alt="" class="img-item" width="auto" height="150">
+              <p><a href="InterfazVentaGalaxyTab.html"><button class="marca-item">Galaxy</button></a></p>
+          </div>
+          <div class="item">
+            <span class="titulo-item">Huawei</span>
+            <img src="/images/Imagenes/LogoHuawei.png" alt="" class="img-item" width="auto" height="150">
+            <p><a href="InterfazVentaMatePad.html"><button class="marca-item">MatePad</button></a></p>
+        </div>
+        <div class="item">
+          <span class="titulo-item">Microsoft</span>
+          <img src="/images/Imagenes/LogoMicrosoft.png" alt="" class="img-item"width="auto" height="150">
+          <p><a href="InterfazVentaSurfaceTab.html"><button class="marca-item">Surface</button></a></p>
+      </div>
+    </section>
+</body>
+</html>

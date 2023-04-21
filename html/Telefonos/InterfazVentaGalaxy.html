@@ -1,153 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/InterfazVentaDispositivos.css">
+    <script src="/js/CarritoPop.js" async></script>
     <title>Galaxy</title>
-    <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #121212;
-      }
-
-      header {
-        background-color: #422C0B;
-        color: #fff;
-        padding: 10px;
-        text-align: center;
-      }
-
-      nav {
-        background-color: #6d4a15;
-        display: flex;
-        justify-content: space-between;
-        padding: 10px;
-      }
-
-      nav a {
-        color: #ffffff;
-        text-decoration: none;
-      }
-
-      main {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 20px;
-      }
-
-      article {
-        background-color: #f2f2f2;
-        border: 1px solid #000000;
-        margin: 10px;
-        padding: 10px;
-        width: 300px;
-      }
-
-      article img {
-        width: 100%;
-      }
-
-      article h2 {
-        margin-top: 0;
-      }
-
-      article p {
-        font-size: 14px;
-        line-height: 1.5;
-        margin-bottom: 0;
-      }
-
-      article button {
-        background-color: #333;
-        border: none;
-        color: #fff;
-        cursor: pointer;
-        display: block;
-        font-size: 16px;
-        margin-top: 10px;
-        padding: 10px;
-        width: 100%;
-      }
-
-      article button:hover {
-        background-color: #3b3b3b31;
-        color: #000000;
-      }
-
-      footer {
-        background-color: #ffffff;
-        color: #fff;
-        padding: 10px;
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Galaxy</h1>
-    </header>
-    <nav>
-      <a href="#">Inicio</a>
-      <a href="#">Carrito</a>
-    </nav>
-    <main>
-      <article>
-        <img src="../Imagenes/GalaxyS23.png" alt="Producto 1" />
-        <h2>Galaxy S23</h2>
-        <p>128 GB
-            <br>
-            Crema
-        </p>
-        <p>Precio: ₡405,000</p>
-        <button>Agregar al carrito</button>
-      </article>
-      <article>
-        <img src="../Imagenes/GalaxyS23+.png" alt="Producto 1" />
-        <h2>Galaxy S23+</h2>
-        <p>128 GB
-            <br>
-            Lavanda
-        </p>
-        <p>Precio: ₡458,000</p>
-        <button>Agregar al carrito</button>
-      </article>
-      <article>
-        <img src="../Imagenes/GalaxyS23Ultra.png" alt="Producto 1" />
-        <h2>Galaxy S23 Ultra</h2>
-        <p>128 GB
-            <br>
-            Verde
-        </p>
-        <p>Precio: ₡594,000</p>
-        <button>Agregar al carrito</button>
-      </article>
-      <article>
-        <img src="../Imagenes/GalaxyZFlip4.png" alt="Producto 1" />
-        <h2>Galaxy Z Flip 4</h2>
-        <p>256 GB
-            <br>
-            Azul
-        </p>
-        <p>Precio: ₡632,000</p>
-        <button>Agregar al carrito</button>
-      </article>
-    </article>
-    <article>
-      <img src="../Imagenes/GalaxyZFold4.webp" alt="Producto 1" />
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <h2>Galaxy Z Fold 4</h2>
-      <p>256 GB
-          <br>
-          Grafito
-      </p>
-      <p>Precio: ₡837,000</p>
-      <button>Agregar al carrito</button>
-    </article>
+</head>
+<body>
+  <header id="header">
+    <p><span style="font-weight: bold;">Si</span>bö</p>
+    <h1>Galaxy</h1> 
+    <a href="/html/Principal/principal.html">
+        <button class="logo">
+            <img class="logo" src="/images/logo.png" alt="">
+        </button>
+    </a>
+</header>
+        <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+            <div class="carrito-items">
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                      ₡10,000,000
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
