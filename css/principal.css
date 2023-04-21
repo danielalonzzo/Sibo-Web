@@ -20,16 +20,14 @@ header p{
 header img {
     width: 50px;
     display: flex;
-    margin-right: 10px;
-    
-    
+    margin-right: 10px;    
 }
 .sidebar {
     position: fixed;
     left: 5px;
     bottom: 5px;
     top: 85px;
-    background-color: #6d4a15;
+    background-color: #422C0B;
     width: 190px;
     z-index: 200;
     padding-top: 5px;
@@ -110,4 +108,10 @@ header img {
       opacity: 1;
     }
   }
-  
+  .SiböHistoria{
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50pt; color:#422C0B;
+    background-color: transparent;
+    border-color: transparent  
+}
