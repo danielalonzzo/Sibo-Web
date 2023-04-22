@@ -1,0 +1,89 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: white;
+}
+header{
+    background-color: #422C0B;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 18pt;
+    justify-content: space-between;
+}
+header p{
+    margin-left: 25px;
+    color: white;
+}
+header img {
+    width: 50px;
+    display: flex;
+    position: absolute;
+    left: 1200px;
+}
+.logo {
+    height: 50px;
+    width: 50px;
+    margin-left: 150px;
+    display: flex;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+}
+.sidebar {
+    position: fixed;
+    left: 5px;
+    bottom: 5px;
+    top: 85px;
+    background-color: #422C0B;
+    width: 190px;
+    z-index: 200;
+    padding-top: 5px;
+    border-radius: 40px;
+}
+.sidebar-link {
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.sidebar-link:hover {
+    background-color: #0000007d;
+    border-radius: 40px;
+}
+.sidebar-link img {
+    height: 25px;
+    margin-bottom: 4px;
+}
+.sidebar-link div {
+    font-size: 15px;
+    color: white;
+}
+.carrito {
+    text-decoration: none;
+}
+.txt h2{
+    color: #422C0B;
+    margin-top: 30px;
+    margin-left: 240px;
+}
+.txt button {
+    background-color: #422C0B;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 160px;
+    height: 50px;
+}
+.txt button:hover{
+    transition: 0.3s;
+    background-color: #000000b0;
+}

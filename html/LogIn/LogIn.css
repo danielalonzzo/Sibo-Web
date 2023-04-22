@@ -8,8 +8,6 @@ body{
     /* background-color: #252424; */
 }
 
-
-
 header{
     background-color: #422C0B;
     height: 80px;
@@ -17,6 +15,7 @@ header{
     align-items: center;
     box-shadow: 1px 0px 10px #403939;
     font-size: 18pt;
+    justify-content: space-between;
 }
 
 header p{
@@ -29,6 +28,16 @@ header p{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    margin-right: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
 }
 
 form{
