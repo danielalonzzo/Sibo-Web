@@ -31,7 +31,7 @@ const carrito = [];
 
 async function mostrarProductos() {
   const productosRef = collection(db, "Productos");
-  const productosQuery = query(productosRef, where("marca", "==", "Apple"), where("tipo", "==", "Teléfono"));
+  const productosQuery = query(productosRef, where("marca", "==", "Hp"), where("tipo", "==", "Computadora"));
   const productosSnapshot = await getDocs(productosQuery);
   
   productosSnapshot.forEach((productoDoc) => {

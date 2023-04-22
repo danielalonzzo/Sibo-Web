@@ -1,18 +1,3 @@
-import { initializeApp } from "";
-import {getFirestore, collection, addDoc, getDocs, onSnapshot } from "";
-import { getDatabase, ref, onValue, push, set, remove, update, get} from "";
-import { updateDoc, doc} from "";
-
-const firebaseConfig = {
-  apiKey: "",
-  authDomain: "",
-  projectId: "",
-  storageBucket: "",
-  messagingSenderId: "",
-  appId: "",
-  measurementId: "",
-};
-
 //Variable que mantiene el estado visible del carrito
 var carritoVisible = false;
 

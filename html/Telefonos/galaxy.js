@@ -26,12 +26,11 @@ const firebaseConfig = {
 };
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-const carrito = [];
 
 
 async function mostrarProductos() {
   const productosRef = collection(db, "Productos");
-  const productosQuery = query(productosRef, where("marca", "==", "Apple"), where("tipo", "==", "Teléfono"));
+  const productosQuery = query(productosRef, where("marca", "==", "Samsung"), where("tipo", "==", "Teléfono"));
   const productosSnapshot = await getDocs(productosQuery);
   
   productosSnapshot.forEach((productoDoc) => {
