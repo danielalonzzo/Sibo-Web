@@ -9,28 +9,34 @@ body {
 }
 header{
     background-color: #422C0B;
-    color: #fff;
-    padding: 5px;
-    text-align: center;
+    height: 80px;
     display: flex;
     align-items: center;
-    gap: 31%;
-    height: 70px;
-    top: 0;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-}
-header p {
-    margin-left: 65px;
-    color: white;
+    box-shadow: 1px 0px 10px #403939;
     font-size: 18pt;
+    justify-content: space-between;
 }
+header h1 {
+    color: white;
+    font-size: 35px;
+}
+header p{
+    margin-left: 15px;
+    color: white;
+}
+
+.login-form{
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .logo {
     height: 50px;
     width: 50px;
     display: flex;
-    left: 1200px;
+    margin-right: 20px;
     cursor: pointer;
     background-color: transparent;
     border-color: transparent;

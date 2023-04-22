@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principal</title>
+    <link rel="stylesheet" href="/css/cuenta.css">
+    <script src="/js/cuenta.js"></script>
+</head>
+<body>
+    <header>
+        <p><span style="font-weight: bold;">Si</span>bö</p>
+        <a href="/html/Principal/principal.html">
+            <button class="logo">
+                <img class="logo" src="/images/logo.png" alt="">
+            </button>
+        </a>
+    </header>
+
+    <nav class="sidebar">
+        <div class="sidebar-link">
+            <img src="/images/user.svg">
+            <div>Cuenta</div>
+        </div>
+    </nav>
+
+    <div>
+        <div class="txt">
+            <h2>Nombre: <span id="nombre" contenteditable></span></h2>
+
+            <h2>Apellidos: <span id="apellidos" contenteditable></span></h2>
+            
+            <h2>Correo Electrónico: <span id="correo" contenteditable></span></h2>
+            
+            <h2>Contraseña: <span id="contraseña" contenteditable></span></h2>
+            
+            <h2>Género: <span id="genero" contenteditable></span></h2>
+            
+            <h2>Edad: <span id="edad" contenteditable></span></h2>
+            
+            <button onclick="guardar()">Actualizar información</button>
+        </div>
+    </div>
+
+</body>
+</html>
