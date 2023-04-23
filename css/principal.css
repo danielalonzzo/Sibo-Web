@@ -41,6 +41,7 @@ header img {
     align-items: center;
     flex-direction: column;
     cursor: pointer;
+    text-decoration: none;
 }
 .sidebar-link:hover {
     background-color: #422C0B;

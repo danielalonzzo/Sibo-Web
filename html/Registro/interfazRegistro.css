@@ -1,11 +1,15 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
 body{
     background-color: #121212;
   }
 
   header{
     background-color: #422C0B;
-    height: 80px;
     display: flex;
+    height: 80px;
     align-items: center;
     font-size: 18pt;
     justify-content: space-between;
