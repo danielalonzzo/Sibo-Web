@@ -2,8 +2,7 @@ body {
     background-image: url(/images/Imagenes/Sibo7.jpg.webp);
   }
   header{
-    background-color: #422c0b00;
-    color: invert;
+    background-color: #422c0bd2;
     height: 80px;
     display: flex;
     align-items: center;
@@ -12,7 +11,7 @@ body {
 }
 header p{
     margin-left: 25px;
-    color: white;
+    color: white; 
 }
 header img {
     width: 50px;

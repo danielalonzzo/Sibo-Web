@@ -49,6 +49,9 @@ async function mostrarProductos() {
     const botonItem = document.createElement("button");
     botonItem.classList.add("boton-item");
     botonItem.textContent = "Agregar al Carrito";
+    botonItem.addEventListener("click", function() {
+      alert("Se agregó al carrito");
+    });
 
     item.appendChild(tituloItem);
     item.appendChild(imgItem);
