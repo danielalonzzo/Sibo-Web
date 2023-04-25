@@ -24,7 +24,9 @@ header p{
     margin-left: 15px;
     color: white;
 }
-
+.contenedor-carrito{
+    display: none;
+}
 .login-form{
     height: 800px;
     display: flex;
@@ -53,6 +55,7 @@ header p{
 /* SECCION CONTENEDOR DE ITEMS */
 .item {
     background-color: #f2f2f2;
+    
 }
 .contenedor .contenedor-items{
     margin-top: 100px;

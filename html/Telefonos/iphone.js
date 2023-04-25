@@ -2,17 +2,10 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase
 import {
   getFirestore,
   collection,
-  addDoc,
-  setDoc,
   getDocs,
-  doc,
-  updateDoc,
-  deleteDoc,
-  getDoc,
   query,
   where
 } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore.js";
-import { getStorage, ref, uploadBytes, getDownloadURL} from "https://www.gstatic.com/firebasejs/9.0.2/firebase-storage.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBV__UglW83VhQT8Af36IoU_DDUpvmj_tM",
@@ -26,7 +19,7 @@ const firebaseConfig = {
 };
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-const carrito = [];
+
 
 
 async function mostrarProductos() {
@@ -63,10 +56,22 @@ async function mostrarProductos() {
     item.appendChild(botonItem);
 
     contenedorItems.appendChild(item);
-    
-  });
-}
+
+    botonItem.addEventListener('click', () => {
+      
+
+
+
+
+
+    })
+
+
+  })}
 
 mostrarProductos();
 
 
+
+
+  

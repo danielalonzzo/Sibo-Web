@@ -33,7 +33,7 @@ header p {
     background-color: transparent;
     border-color: transparent;
 }
-/* ** estilo de cada producto **
+** estilo de cada producto **
 img{
     width: 320px;
     height: 340px;
@@ -217,4 +217,3 @@ img{
 .informacion button:hover{
     background-color: rgb(57, 56, 56);
 }
-*/
